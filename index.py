@@ -17,9 +17,12 @@ def these():
 @app.route("/gurdkemis")
 def that():
     return render_template("a.html", ቀሚስ="ጉርድ ቀሚስ" , about=" 600 ብር", image="miniskirt.jpg")
+@app.route("/habeshalebs")
+def there():
+    return render_template("a.html", ቀሚስ="የሃበሻ ልብስ", about="3500", image="R-_1_.jpg")
 @app.route("/order_here")
 def order():
-    return render_template("order.htm")
+    return render_template("order.html")
 @app.route("/enter")
 def enter():
     return render_template("enter.html")
